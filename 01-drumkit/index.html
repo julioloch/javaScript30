@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum Kit</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./sript.js" defer></script>
+</head>
+<body>
+    <div class="metronomo">
+        <div class="bpm">
+            <span class="bpm-atual">120</span>
+            <span class="display-bpm">bpm</span>
+        </div>
+        <div class="slider-container">
+            <div class="range-btn-diminuir btn-hover">-</div>
+            <input type="range" min="40" max="180" step="1" class="slider">
+            <div class="range-btn-aumentar btn-hover">+</div>
+        </div>
+        <div class="compasso">
+            <span class="compasso-span">COMPASSO</span>
+            <div class="compasso-window">
+                <div class="compasso-btn-diminuir btn-hover">-</div>
+                <div class="compasso-display">4</div>
+                <div class="compasso-btn-aumentar btn-hover">+</div>
+            </div>
+        </div>
+        <div class="start-btn">START</div>
+    </div>
+
+    <div class="keys">
+        <div data-key="65" class="key">
+            <p class="title">A</p>
+            <p class="subtitle">clap</p>
+        </div>
+        <div data-key="83" class="key">
+            <p class="title">S</p>
+            <p class="subtitle">hihat</p>
+        </div>
+        <div data-key="68" class="key">
+            <p class="title">D</p>
+            <p class="subtitle">kick</p>
+        </div>
+        <div data-key="70" class="key">
+            <p class="title">F</p>
+            <p class="subtitle">openhat</p>
+        </div>
+        <div data-key="71" class="key">
+            <p class="title">G</p>
+            <p class="subtitle">boom</p>
+        </div>
+        <div data-key="72" class="key">
+            <p class="title">H</p>
+            <p class="subtitle">ride</p>
+        </div>
+        <div data-key="74" class="key">
+            <p class="title">J</p>
+            <p class="subtitle">snare</p>
+        </div>
+        <div data-key="75" class="key">
+            <p class="title">K</p>
+            <p class="subtitle">tom</p>
+        </div>
+        <div data-key="76" class="key">
+            <p class="title">L</p>
+            <p class="subtitle">tink</p>
+        </div>
+    </div>
+
+
+    <audio data-key="65" src="sounds/clap.wav"></audio>
+    <audio data-key="83" src="sounds/hihat.wav"></audio>
+    <audio data-key="68" src="sounds/kick.wav"></audio>
+    <audio data-key="70" src="sounds/openhat.wav"></audio>
+    <audio data-key="71" src="sounds/boom.wav"></audio>
+    <audio data-key="72" src="sounds/ride.wav"></audio>
+    <audio data-key="74" src="sounds/snare.wav"></audio>
+    <audio data-key="75" src="sounds/tom.wav"></audio>
+    <audio data-key="76" src="sounds/tink.wav"></audio>
+
+
+
+</body>
+</html>
